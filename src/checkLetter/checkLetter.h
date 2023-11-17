@@ -5,6 +5,6 @@
 
 using namespace std;
 
-string checkLetter(string word, char guess, string status);
+string checkLetter(string word, char guess, string guesses, string status);
 
 #endif // !CHECKLETTER_H

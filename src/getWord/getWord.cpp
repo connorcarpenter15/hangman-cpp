@@ -1,3 +1,4 @@
+#include "getWord.h"
 #include <array>
 #include <cstdlib>
 #include <ctime>
