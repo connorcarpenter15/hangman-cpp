@@ -33,30 +33,39 @@ int main() {
         status += '_';
       };
 
-      drawHangman(limbs);
-      cout << "Enter your guess: " << endl;
-      cin >> letterGuess;
-      guesses += letterGuess;
+      //guessing process
+      while (true) {
+        drawHangman(limbs);
+        if (checkWinLose(limbs, word, status)) {
+          break;}
+        cout << "Enter your guess: " << endl;
+        cin >> letterGuess;
+        guesses += letterGuess;
 
-      // 0 not in word
-      // 1 in word
-      // 2 alreay guessed
-      do {
-        letterStatus = checkLetter(word, letterGuess, guesses, status);
-        for (int i = 0; i < word.size(); i++) {
-          if (word[i] == letterGuess) {
-            status[i] = letterGuess;
+        // 0 not in word
+        // 1 in word
+        // 2 alreay guessed
+        do {
+          letterStatus = checkLetter(word, letterGuess, guesses, status);
+          for (int i = 0; i < word.size(); i++) {
+            if (word[i] == letterGuess) {
+              status[i] = letterGuess;
+            }
           }
-        };
-        if (letterStatus == 1) {
-        }
-      } while (letterStatus == 2);
+          if (letterStatus == 0) {
+            limbs++;
+          }
+
+        } while (letterStatus == 2);
+      }
       break;
     }
+
     case 'h': {
       showHelp();
       break;
     }
+
     case 'q': {
       return 0;
     }

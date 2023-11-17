@@ -1,8 +1,11 @@
 #ifndef GETWORD_H
 #define GETWORD_H
 
-#include <string>
-
+#include "getWord.h"
+#include <array>
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
 using namespace std;
 
 string getWord();
