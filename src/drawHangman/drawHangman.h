@@ -5,6 +5,6 @@
 
 using namespace std;
 
-string drawHangman();
+void drawHangman(int limbs);
 
 #endif // !DRAWHANGMAN
