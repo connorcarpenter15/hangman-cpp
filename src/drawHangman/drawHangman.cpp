@@ -77,7 +77,3 @@ void drawHangman(int limbs) {
     }
 }
 
-int main() {
-    drawHangman(6);
-}
-
