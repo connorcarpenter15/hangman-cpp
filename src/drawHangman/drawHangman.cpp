@@ -11,6 +11,26 @@ void drawHangman(int limbs) {
     // endl << " ║       " <<
     // endl << "═╩═══════";
 
+    if (limbs == 0) {
+        cout << " +----+-" <<
+        endl << " |    O  " <<
+        endl << " |   \\|/" <<
+        endl << " |    |  " <<
+        endl << " |   / \\" <<
+        endl << " |       " <<
+        endl << "-+-------";
+    } else if (limbs == 0) {
+
+    } else if (limbs == 0) {
+
+    } else if (limbs == 0) {
+
+    } else if (limbs == 0) {
+
+    } else if (limbs == 0) {
+
+    } else {
+
     cout << " +----+-" <<
     endl << " |    O  " <<
     endl << " |   \\|/" <<
@@ -18,6 +38,7 @@ void drawHangman(int limbs) {
     endl << " |   / \\" <<
     endl << " |       " <<
     endl << "-+-------";
+    }
 }
 
 int main() {
