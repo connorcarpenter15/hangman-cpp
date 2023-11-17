@@ -13,3 +13,4 @@
 
 # executables
 *.exe
+*/*/*.exe
