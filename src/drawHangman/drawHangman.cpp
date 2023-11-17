@@ -75,5 +75,7 @@ void drawHangman(int limbs) {
     endl << " |       " <<
     endl << "-+-------";
     }
+
+    cout << endl;
 }
 
