@@ -15,7 +15,7 @@ int checkLetter(string &word, char guess, string &guesses, string &status) {
     }
   }
 
-  for (size_t i = 0; i < word.length(); ++i) {
+  for (int i = 0; i < word.length(); ++i) {
     if (guess == word[i]) {
       status[i] = guess;
       cout << "The letter '" << guess << "' was in the word.";

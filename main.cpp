@@ -14,7 +14,7 @@ int main() {
   int limbs = 0;
   char choice;
   char letterGuess;
-  int a;
+  int letterStatus;
   string guesses;
 
   do {
@@ -42,14 +42,16 @@ int main() {
       // 1 in word
       // 2 alreay guessed
       do {
-        int a = checkLetter(word, letterGuess, guesses, status);
-      for (int i = 0; i < word.size(); i++) {
-        if (word[i] == letterGuess) {
-          status[i] = letterGuess; } 
-      };
-      }
-      } while (a == 2);
-          break;
+        letterStatus = checkLetter(word, letterGuess, guesses, status);
+        for (int i = 0; i < word.size(); i++) {
+          if (word[i] == letterGuess) {
+            status[i] = letterGuess;
+          }
+        };
+        if (letterStatus == 1) {
+        }
+      } while (letterStatus == 2);
+      break;
     }
     case 'h': {
       showHelp();
@@ -59,7 +61,6 @@ int main() {
       return 0;
     }
     }
-
   } while (choice != 'q');
 
   return 0;
