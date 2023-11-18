@@ -39,19 +39,21 @@ int main() {
         if (checkWinLose(limbs, word, status)) {
           break;
         }
-        cout << endl << status << endl << endl;
-        cout << "Enter your guess: ";
-        cin >> guess;
-        guesses += guess;
+        
 
         // 0 not in word
         // 1 in word
         // 2 alreay guessed
         do {
+	  cout << endl << status << endl << endl;
+          cout << "Enter your guess: ";
+          cin >> guess;
+
           // c++ moment
           cout << endl << endl;
           cout << "guesses: " << guesses << endl;
           letterStatus = checkLetter(word, guess, guesses, status);
+	  guesses += guess;
           cout << endl;
 
           if (letterStatus == 0) {
