@@ -23,10 +23,10 @@ int checkLetter(string &word, char guess, string &guesses, string &status) {
       correct = true;
     }
   }
-  
-  if correct {
-    return 1;  
-  } else { 
+
+  if (correct) {
+    return 1;
+  } else {
     cout << "The letter '" << guess << "' was not in the word.";
     return 0;
   }
