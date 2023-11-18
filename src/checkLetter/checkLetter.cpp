@@ -15,15 +15,21 @@ int checkLetter(string &word, char guess, string &guesses, string &status) {
     }
   }
 
+  bool correct = false;
   for (size_t i = 0; i < word.length(); ++i) {
     if (guess == word[i]) {
       status[i] = guess;
       cout << "The letter '" << guess << "' was in the word.";
-      return 1;
+      correct = true;
     }
   }
-  cout << "The letter '" << guess << "' was not in the word.";
-  return 0;
+  
+  if correct {
+    return 1;  
+  } else { 
+    cout << "The letter '" << guess << "' was not in the word.";
+    return 0;
+  }
 }
 
 /* int main() { */
