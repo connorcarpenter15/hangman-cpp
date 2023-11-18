@@ -1554,8 +1554,8 @@ string GetWord() {
 
 //// testing random index gen
 
-int main(int argc, char *argv[]) {
-  string word = GetWord();
-  cout << word << endl;
-  return 0;
-}
+/* int main(int argc, char *argv[]) { */
+/*   string word = GetWord(); */
+/*   cout << word << endl; */
+/*   return 0; */
+/* } */
