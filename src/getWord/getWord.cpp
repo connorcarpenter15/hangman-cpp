@@ -1546,7 +1546,7 @@ string getWord() {
   srand(time(0));
   // get random number for index in wordList
   int randomIndex = rand() % (wordList.size());
-  cout << randomIndex << endl;
+  /* cout << randomIndex << endl; */
 
   word = wordList[randomIndex];
   return word;

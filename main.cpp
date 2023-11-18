@@ -52,7 +52,6 @@ int main() {
           letterStatus = checkLetter(word, guess, guesses, status);
           cout << endl;
 
-          }
           if (letterStatus == 0) {
             limbs++;
           }
