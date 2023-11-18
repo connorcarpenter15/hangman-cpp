@@ -29,7 +29,7 @@ int main() {
 
       // set empty status
       string status = "";
-      for (int i = 0; i < word.size(); i++) {
+      for (size_t i = 0; i < word.size(); i++) {
         status += '_';
       };
 
@@ -37,8 +37,10 @@ int main() {
       while (true) {
         drawHangman(limbs);
         if (checkWinLose(limbs, word, status)) {
-          break;}
-        cout << "Enter your guess: " << endl;
+          break;
+        }
+        cout << endl << status << endl << endl;
+        cout << "Enter your guess: " <<;
         cin >> letterGuess;
         guesses += letterGuess;
 
@@ -47,7 +49,7 @@ int main() {
         // 2 alreay guessed
         do {
           letterStatus = checkLetter(word, letterGuess, guesses, status);
-          for (int i = 0; i < word.size(); i++) {
+          for (size_t i = 0; i < word.size(); i++) {
             if (word[i] == letterGuess) {
               status[i] = letterGuess;
             }
