@@ -1549,6 +1549,7 @@ string getWord() {
   /* cout << randomIndex << endl; */
 
   word = wordList[randomIndex];
+  cout << "word: " << word << endl;
   return word;
 }
 
