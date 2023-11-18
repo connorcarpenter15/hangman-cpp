@@ -29,13 +29,13 @@ int checkLetter(string &word, char guess, string &guesses, string &status) {
   return 0;
 }
 
-int main() {
-  string word = "word";
-  char guess = 'a';
-  string guesses = "bcd";
-  string status = "____";
-
-  int a = checkLetter(word, guess, guesses, status);
-
-  return 0;
-}
+/* int main() { */
+/*   string word = "word"; */
+/*   char guess = 'a'; */
+/*   string guesses = "bcd"; */
+/*   string status = "____"; */
+/**/
+/*   int a = checkLetter(word, guess, guesses, status); */
+/**/
+/*   return 0; */
+/* } */
