@@ -4,7 +4,7 @@
 using namespace std;
 
 void drawHangman(int limbs) {
-  cout << "You have " << 6 - limbs << " guesses left" << endl << endl;
+  cout << "\nYou have " << 6 - limbs << " guesses left" << endl << endl;
 
   // cout << " ╔════╤═ " <<
   // endl << " ║    O  " <<

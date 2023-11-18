@@ -20,12 +20,9 @@ int checkLetter(string &word, char guess, string &guesses, string &status) {
       status[i] = guess;
       cout << "The letter '" << guess << "' was in the word.";
       return 1;
-    } else {
-      cout << "The letter '" << guess << "' was not in the word.";
-      return 0;
     }
   }
-
+  cout << "The letter '" << guess << "' was not in the word.";
   return 0;
 }
 
