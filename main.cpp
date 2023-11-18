@@ -33,7 +33,7 @@ int main() {
         status += '_';
       };
 
-      //guessing process
+      // guessing process
       while (true) {
         drawHangman(limbs);
         if (checkWinLose(limbs, word, status)) {
@@ -51,7 +51,7 @@ int main() {
           cout << endl << endl;
           letterStatus = checkLetter(word, letterGuess, guesses, status);
           cout << endl;
-          
+
           for (size_t i = 0; i < word.size(); i++) {
             if (word[i] == letterGuess) {
               status[i] = letterGuess;
