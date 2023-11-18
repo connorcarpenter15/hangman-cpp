@@ -7,7 +7,7 @@ using namespace std;
  * Displays the menu of options
  */
 void showMenu() {
-  cout << "\nMenu" << endl;
+  cout << "\n\nMenu" << endl;
   cout << "----" << endl;
   cout << "[p] Play" << endl;
   cout << "[h] Get Help" << endl;

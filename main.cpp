@@ -10,14 +10,13 @@
 using namespace std;
 
 int main() {
-  string status;
-  int limbs = 0;
   char choice;
-  char guess;
   int letterStatus;
-  string guesses;
+  char guess;
 
   do {
+    string guesses = "";
+    int limbs = 0;
     showMenu();
 
     cin >> choice;
@@ -50,7 +49,7 @@ int main() {
 
           // c++ moment
           cout << endl << endl;
-          cout << "guesses: " << guesses << endl;
+          cout << "You have guessed: " << guesses << endl;
           letterStatus = checkLetter(word, guess, guesses, status);
           guesses += guess;
           cout << endl;

@@ -7,7 +7,8 @@ using namespace std;
 // if terminate, return true, else return false
 bool checkWinLose(int limbs, string &word, string &status) {
   if (limbs >= 6) {
-    cout << "Oh no, you have ran out of guesses!";
+    cout << "Oh no, you have ran out of guesses!" << endl;
+    cout << "The word was: " << word << endl;
     return true; // return false if lose
   } else if (status == word) {
     cout << "You won!";
