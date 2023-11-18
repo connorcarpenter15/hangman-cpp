@@ -40,7 +40,7 @@ int main() {
           break;
         }
         cout << endl << status << endl << endl;
-        cout << "Enter your guess: " <<;
+        cout << "Enter your guess: ";
         cin >> letterGuess;
         guesses += letterGuess;
 
@@ -48,7 +48,10 @@ int main() {
         // 1 in word
         // 2 alreay guessed
         do {
+          cout << endl << endl;
           letterStatus = checkLetter(word, letterGuess, guesses, status);
+          cout << endl;
+          
           for (size_t i = 0; i < word.size(); i++) {
             if (word[i] == letterGuess) {
               status[i] = letterGuess;
