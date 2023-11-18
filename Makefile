@@ -2,7 +2,7 @@ CC = g++
 CFLAGS = -Wall -std=c++11
 SRC_DIR = src
 
-SRCS = $(wildcard $(SRC_DIR)/**/*.cpp)
+SRCS = $(wildcard $(SRC_DIR)/**/*.cpp) main.cpp
 OBJS = $(SRCS:.cpp=.o)
 EXECUTABLE = hangmanGame
 
@@ -15,4 +15,4 @@ $(EXECUTABLE): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(SRC_DIR)/**/*.o $(EXECUTABLE)
+	rm -f $(SRC_DIR)/**/*.o *.o $(EXECUTABLE)
