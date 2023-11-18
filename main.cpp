@@ -48,7 +48,9 @@ int main() {
         // 1 in word
         // 2 alreay guessed
         do {
+          // c++ moment
           cout << endl << endl;
+          cout << "guesses: " << guesses << endl;
           letterStatus = checkLetter(word, guess, guesses, status);
           cout << endl;
 
