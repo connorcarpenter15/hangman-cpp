@@ -7,7 +7,7 @@ using namespace std;
 
 string getWord();
 
-string GetWord() {
+string getWord() {
   string word;
   // make wordlist array and choose random index
   array<string, 1530> wordList{"people",
