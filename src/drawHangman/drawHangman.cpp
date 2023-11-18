@@ -55,7 +55,7 @@ void drawHangman(int limbs) {
          << " |    O  " << endl
          << " |   \\|/" << endl
          << " |    |  " << endl
-         << " |   /   " << endl
+         << " |       " << endl
          << " |       " << endl
          << "-+-------";
 
@@ -64,7 +64,7 @@ void drawHangman(int limbs) {
          << " |    O  " << endl
          << " |   \\|/" << endl
          << " |    |  " << endl
-         << " |   / \\" << endl
+         << " |   /   " << endl
          << " |       " << endl
          << "-+-------";
 
