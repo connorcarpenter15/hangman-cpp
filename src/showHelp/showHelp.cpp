@@ -18,7 +18,7 @@ void showHelp() {
           "and you will be able to guess again. Once the hangman is fully "
           "drawn or you guess the whole word, the game will end and your win "
           "and loss ratio will be displayed. You can then choose to play again "
-          "or exit the program. \n\nPress [q] to quit Help"
+          "or exit the program.\n\n"
        << endl;
   cout << endl;
 }
