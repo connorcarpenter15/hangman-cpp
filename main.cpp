@@ -13,7 +13,7 @@ int main() {
   string status;
   int limbs = 0;
   char choice;
-  char letterGuess;
+  char guess;
   int letterStatus;
   string guesses;
 
@@ -41,20 +41,20 @@ int main() {
         }
         cout << endl << status << endl << endl;
         cout << "Enter your guess: ";
-        cin >> letterGuess;
-        guesses += letterGuess;
+        cin >> guess;
+        guesses += guess;
 
         // 0 not in word
         // 1 in word
         // 2 alreay guessed
         do {
           cout << endl << endl;
-          letterStatus = checkLetter(word, letterGuess, guesses, status);
+          letterStatus = checkLetter(word, guess, guesses, status);
           cout << endl;
 
           for (size_t i = 0; i < word.size(); i++) {
-            if (word[i] == letterGuess) {
-              status[i] = letterGuess;
+            if (word[i] == guess) {
+              status[i] = guess;
             }
           }
           if (letterStatus == 0) {

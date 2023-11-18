@@ -1,3 +1,4 @@
+#include "checkWinLose.h"
 #include <iostream>
 
 using namespace std;

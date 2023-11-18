@@ -1,6 +1,7 @@
 #ifndef CHECKLETTER_H
 #define CHECKLETTER_H
 
+#include <iostream>
 #include <string>
 
 using namespace std;
