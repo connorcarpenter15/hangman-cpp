@@ -11,7 +11,8 @@ bool checkWinLose(int limbs, string &word, string &status) {
     cout << "The word was: " << word << endl;
     return true; // return false if lose
   } else if (status == word) {
-    cout << "You won!";
+    cout << "\nYou won!" << endl;
+    cout << "The word was: " << word << endl;
     return true;
   } else {
     // not win or lose
