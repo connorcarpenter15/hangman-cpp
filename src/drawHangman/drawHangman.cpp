@@ -6,14 +6,6 @@ using namespace std;
 void drawHangman(int limbs) {
   cout << "\nYou have " << 6 - limbs << " guesses left" << endl << endl;
 
-  // cout << " ╔════╤═ " <<
-  // endl << " ║    O  " <<
-  // endl << " ║   \\|/" <<
-  // endl << " ║    |  " <<
-  // endl << " ║   / \\" <<
-  // endl << " ║       " <<
-  // endl << "═╩═══════";
-
   if (limbs == 0) {
     cout << " +----+- " << endl
          << " |       " << endl

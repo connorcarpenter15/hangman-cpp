@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
+
 using namespace std;
 
 string getWord();
@@ -1544,19 +1545,11 @@ string getWord() {
 
   // do something with the time to generate a seed for rand()
   srand(time(0));
+
   // get random number for index in wordList
   int randomIndex = rand() % (wordList.size());
-  /* cout << randomIndex << endl; */
 
   word = wordList[randomIndex];
-  /* cout << "word: " << word << endl; */
+
   return word;
 }
-
-//// testing random index gen
-
-/* int main(int argc, char *argv[]) { */
-/*   string word = GetWord(); */
-/*   cout << word << endl; */
-/*   return 0; */
-/* } */

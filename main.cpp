@@ -33,8 +33,10 @@ int main() {
       };
 
       // guessing process
+      drawHangman(limbs);
+      cout << endl << status << endl << endl;
+
       while (true) {
-        drawHangman(limbs);
         if (checkWinLose(limbs, word, status)) {
           break;
         }
@@ -43,20 +45,39 @@ int main() {
         // 1 in word
         // 2 alreay guessed
         do {
-          cout << endl << status << endl << endl;
+          // get guess from user
           cout << "Enter your guess: ";
           cin >> guess;
-
-          // c++ moment
-          cout << endl << endl;
-          cout << "You have guessed: " << guesses << endl;
-          letterStatus = checkLetter(word, guess, guesses, status);
-          guesses += guess;
           cout << endl;
 
+          // check guess
+          letterStatus = checkLetter(word, guess, guesses, status);
+
+          // add limbs
           if (letterStatus == 0) {
             limbs++;
           }
+
+          // draw hangman and status
+          drawHangman(limbs);
+          cout << endl << status << endl << endl;
+
+          // add guess to guesses list
+          if (guesses.find(guess) == string::npos) {
+            guesses += guess;
+          }
+          cout << endl;
+
+          // display previous guesses
+          cout << "You have guessed: ";
+          for (char l : guesses) {
+            if (l == guesses[0]) {
+              cout << l;
+            } else {
+              cout << ", " << l;
+            }
+          }
+          cout << endl;
 
         } while (letterStatus == 2);
       }
