@@ -26,8 +26,6 @@ int checkLetter(string &word, char guess, string &guesses, string &status) {
 
   if (correct) {
     return 1;
-  } else if (guess == '#') {
-    cout << "The word is definitely not " << word << "..." << endl;
   } else {
     cout << "The letter '" << guess << "' was not in the word.";
     return 0;
