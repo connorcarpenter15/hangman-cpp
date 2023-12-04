@@ -12,16 +12,24 @@ string getWord() {
   string word;
   // make wordlist array and choose random index
   array<string, 1530> wordList{"people",
+                               "dante"
+                               "peanut"
+                               "butter"
+                               "antidisestablishmentarianism"
+                               "pneumonoultramicroscopicsilicovolcanoconiosis"
+                               "neovim"
+                               "emacs"
+                               "history",
+                               "caterpillar"
+                               "way",
+                               "art",
+                               "world",
                                "rizz",
                                "yeet",
                                "venturi",
                                "bedir",
                                "midget",
                                "zoomer"
-                               "history",
-                               "way",
-                               "art",
-                               "world",
                                "information",
                                "map",
                                "two",
