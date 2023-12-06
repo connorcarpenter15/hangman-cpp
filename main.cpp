@@ -13,6 +13,7 @@ int main() {
   char choice;
   int letterStatus;
   char guess;
+  int streak = 0;
 
   do {
     string guesses = "";
@@ -37,7 +38,7 @@ int main() {
       cout << endl << status << endl << endl;
 
       while (true) {
-        if (checkWinLose(limbs, word, status)) {
+        if (checkWinLose(limbs, word, status, streak)) {
           break;
         }
 
