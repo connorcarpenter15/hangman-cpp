@@ -2,8 +2,8 @@
 
 A primitive text-based hangman game coded in C++ and run in the command line.
 
-![hangman man](screenshots/hangman-man.png)
-![hangman menu](screenshots/hangman-menu.png)
+![Hangman Man](img/hangman-man.png)
+![Hangman Menu](img/hangman-menu.png)
 
 ## Usage
 
