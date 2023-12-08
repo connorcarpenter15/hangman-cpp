@@ -1,5 +1,7 @@
 # Hangman (C++)
 
+> Made by [@whyammehere](https://github.com/whyammehere), [@cmaccarp](https://github.com/cmaccarp), and [@n-crespo](https://github.com/n-crespo)
+
 A primitive text-based hangman game coded in C++ and run in the command line.
 
 ![Hangman Man](img/hangman-man.png)
