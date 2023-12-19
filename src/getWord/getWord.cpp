@@ -5,8 +5,6 @@
 
 using namespace std;
 
-string getWord();
-
 string getWord() {
   string word;
   // make wordlist array and choose random index
